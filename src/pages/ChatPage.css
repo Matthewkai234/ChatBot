@@ -1,0 +1,132 @@
+/* ChatPage.css */
+
+.chat-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url('https://mhclgdigital.blog.gov.uk/wp-content/uploads/sites/222/2023/11/Chatbot-graphic-illustration.jpg');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: lighten;
+  padding: 20px;
+}
+
+.chat-container {
+  width: 800px; 
+  margin: auto;
+  border: 2px solid #ccc;
+  border-radius: 16px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+}
+
+
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.chat-header h2 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.signout-button {
+  background-color: #2f4ad1;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.chat-messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-bubble {
+  padding: 12px 18px;
+  border-radius: 18px;
+  margin: 10px 0;
+  width: fit-content;
+  max-width: 80%;
+}
+
+.message-bubble.bot {
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  align-self: flex-start;
+}
+
+.message-bubble.user {
+  background-color: #3498db;
+  color: white;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.chat-input {
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.chat-input button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .chat-container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .chat-input {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .chat-input input,
+  .chat-input button {
+    width: 100%;
+  }
+
+  .chat-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+.send-button:hover:not(:disabled) {
+  background-color: #b30000; 
+}
+
+.send-button:disabled {
+  background-color: #cccccc; 
+  cursor: not-allowed;
+}

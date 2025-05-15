@@ -1,15 +1,15 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-chatbot-dev-ec945-authRole",
-      "UnauthRoleArn": "arn:aws:iam::105417737483:role/amplify-chatbot-dev-ec945-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::105417737483:role/amplify-chatbot-dev-ec945-authRole",
-      "Region": "eu-north-1",
-      "DeploymentBucketName": "amplify-chatbot-dev-ec945-deployment",
-      "UnauthRoleName": "amplify-chatbot-dev-ec945-unauthRole",
-      "StackName": "amplify-chatbot-dev-ec945",
-      "StackId": "arn:aws:cloudformation:eu-north-1:105417737483:stack/amplify-chatbot-dev-ec945/ea7d9e70-30cf-11f0-b258-0a6d4113ed43",
-      "AmplifyAppId": "d1jodm31trg851"
+      "AuthRoleName": "amplify-cloudassistant-dev-719a8-authRole",
+      "UnauthRoleArn": "arn:aws:iam::801971731739:role/amplify-cloudassistant-dev-719a8-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::801971731739:role/amplify-cloudassistant-dev-719a8-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-cloudassistant-dev-719a8-deployment",
+      "UnauthRoleName": "amplify-cloudassistant-dev-719a8-unauthRole",
+      "StackName": "amplify-cloudassistant-dev-719a8",
+      "StackId": "arn:aws:cloudformation:eu-west-1:801971731739:stack/amplify-cloudassistant-dev-719a8/8a0579d0-30f9-11f0-9678-0617c8e71447",
+      "AmplifyAppId": "doa0ky4gpg0il"
     }
   }
 }

@@ -1,10 +1,10 @@
 {
   "version": "1",
   "cognitoConfig": {
-    "identityPoolName": "chatbotbf3e750e_identitypool_bf3e750e",
+    "identityPoolName": "chatbote3885b24_identitypool_e3885b24",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "chatbobf3e750e",
-    "userPoolName": "chatbotbf3e750e_userpool_bf3e750e",
+    "resourceNameTruncated": "chatboe3885b24",
+    "userPoolName": "chatbote3885b24_userpool_e3885b24",
     "autoVerifiedAttributes": [
       "email"
     ],
@@ -31,12 +31,15 @@
     "userpoolClientReadAttributes": [
       "email"
     ],
-    "userpoolClientLambdaRole": "chatbobf3e750e_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "chatboe3885b24_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "bf3e750e",
-    "resourceName": "chatbotbf3e750e",
+    "sharedId": "e3885b24",
+    "resourceName": "chatbote3885b24",
     "authSelections": "identityPoolAndUserPool",
     "useDefault": "default",
+    "usernameAttributes": [
+      "email"
+    ],
     "userPoolGroupList": [],
     "serviceName": "Cognito",
     "usernameCaseSensitive": false,

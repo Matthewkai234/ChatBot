@@ -44,6 +44,7 @@ export const listConversations = /* GraphQL */ `
 export const conversationsByUser = /* GraphQL */ `
   query ConversationsByUser(
     $user: String!
+    $createdAt: ModelStringKeyConditionInput
     $sortDirection: ModelSortDirection
     $filter: ModelConversationFilterInput
     $limit: Int
@@ -51,6 +52,7 @@ export const conversationsByUser = /* GraphQL */ `
   ) {
     conversationsByUser(
       user: $user
+      createdAt: $createdAt
       sortDirection: $sortDirection
       filter: $filter
       limit: $limit

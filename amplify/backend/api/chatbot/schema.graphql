@@ -1,22 +1,17 @@
-# This "input" configures a global authorization rule to enable public access to
-# all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
-input AMPLIFY { globalAuthRule: AuthRule = { allow: public } } # FOR TESTING ONLY!
-# ----------------------------------------------------------------------------------
+type Conversation @model @auth(rules: [{allow: owner}]) {
+  id: ID!
+  name: String!
+  user: String! @index(name: "conversationsByUser", queryField: "conversationsByUser", sortKeyFields: ["createdAt"])
+  description: String
+  createdAt: String!
+  utterances: [Utterance] @hasMany(indexName: "byConversationId", fields: ["id"])
+}
 
-type Conversation @model @auth(rules: [{allow: owner}]) { 
-  id: ID! 
-  name: String! 
-  user: String! @index(name: "conversationsByUser", queryField: "conversationsByUser"), 
-  description: String 
-  createdAt: String! 
-  utterances: [Utterance] @hasMany (indexName: "byConversationId", fields: ["id"]) 
-} 
-
-type Utterance @model @auth(rules: [{allow: owner}]) { 
-  id: ID! 
-  text: String! 
-  author: String! 
-  conversationId: ID! @index(name: "byConversationId", sortKeyFields: ["createdAt"]) 
-  data: String 
-  createdAt: String! 
-} 
+type Utterance @model @auth(rules: [{allow: owner}]) {
+  id: ID!
+  text: String!
+  author: String!
+  conversationId: ID! @index(name: "byConversationId", sortKeyFields: ["createdAt"])
+  data: String
+  createdAt: String!
+}

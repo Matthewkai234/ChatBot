@@ -14,8 +14,8 @@ const ChatPage = () => {
 
   const handleSignOut = async () => {
     try {
-      await signOut();
-      navigate('/');
+      await signOut({ global: true }); 
+      window.location.replace('/');    
     } catch (error) {
       console.log('Error signing out: ', error);
     }

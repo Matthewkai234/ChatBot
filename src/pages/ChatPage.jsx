@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { signOut } from 'aws-amplify/auth';
 import { useNavigate } from 'react-router-dom';
 import { sendMessageToLex } from '../services/lexService';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import './ChatPage.css';
 
 const ChatPage = () => {
@@ -54,7 +52,7 @@ const ChatPage = () => {
     <div className="chat-page">
       <div className="chat-container">
         <div className="chat-header">
-          <h2>Cloud Assistant</h2>
+          <h2>🤖 Cloud Assistant</h2>
           <button className="signout-button" onClick={handleSignOut}>
             Sign Out
           </button>
@@ -77,14 +75,13 @@ const ChatPage = () => {
             onKeyDown={handleInputKeyDown}
             disabled={isSending}
           />
-         <button
-  className="send-button"
-  onClick={handleSend}
-  disabled={isSending || !input.trim()}
->
-  Send
-</button>
-
+          <button
+            className="send-button"
+            onClick={handleSend}
+            disabled={isSending || !input.trim()}
+          >
+            Send
+          </button>
         </div>
       </div>
     </div>

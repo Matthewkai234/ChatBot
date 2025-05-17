@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Navigate } from 'react-router-dom';
-import { fetchAuthSession } from 'aws-amplify/auth';
+import { getCurrentUser } from 'aws-amplify/auth';
 
 const ProtectedRoute = ({ children }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(null);
@@ -8,10 +8,11 @@ const ProtectedRoute = ({ children }) => {
   useEffect(() => {
     const checkAuth = async () => {
       try {
-        const session = await fetchAuthSession();
-        const tokens = session.tokens;
-        setIsAuthenticated(!!tokens?.idToken);
-      } catch {
+        const user = await getCurrentUser();
+        console.log("User is authenticated:", user);
+        setIsAuthenticated(true);
+      } catch (error) {
+        console.log("User is not authenticated:", error);
         setIsAuthenticated(false);
       }
     };
@@ -21,7 +22,7 @@ const ProtectedRoute = ({ children }) => {
 
   if (isAuthenticated === null) return <div>Loading...</div>;
 
-  return isAuthenticated ? children : <Navigate to="/login" />;
+  return isAuthenticated ? children : <Navigate to="/" />;
 };
 
 export default ProtectedRoute;

@@ -14,6 +14,9 @@
     "categories": {
       "auth": {
         "cloudassitant8ea51a8e": {}
+      },
+      "storage": {
+        "UserPreferencesStorage": {}
       }
     }
   }

@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "CloudAssistantAPI",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authcloudassitant8ea51a8e",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

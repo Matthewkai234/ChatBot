@@ -1,6 +1,8 @@
 {
-  "whyContinueWithGen1": "Prefer not to answer",
-  "projectName": "ChatBot",
+  "providers": [
+    "awscloudformation"
+  ],
+  "projectName": "CloudAssitant",
   "version": "3.1",
   "frontend": "javascript",
   "javascript": {
@@ -9,10 +11,7 @@
       "SourceDir": "src",
       "DistributionDir": "dist",
       "BuildCommand": "npm run build",
-      "StartCommand": "npm run dev"
+      "StartCommand": "npm run dev "
     }
-  },
-  "providers": [
-    "awscloudformation"
-  ]
+  }
 }

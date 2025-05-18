@@ -1,0 +1,22 @@
+.login-page {
+   background-image: url('https://wallpapers.com/images/hd/ai-pictures-1920-x-1080-xl3e8icnjuafomrj.jpg');
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f2f5;
+}
+
+.auth-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+@media (max-width: 600px) {
+  .auth-container {
+    padding: 20px 10px;
+  }
+}
+

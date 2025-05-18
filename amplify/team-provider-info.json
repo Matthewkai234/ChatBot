@@ -1,15 +1,20 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-chatbot-dev-ec945-authRole",
-      "UnauthRoleArn": "arn:aws:iam::105417737483:role/amplify-chatbot-dev-ec945-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::105417737483:role/amplify-chatbot-dev-ec945-authRole",
-      "Region": "eu-north-1",
-      "DeploymentBucketName": "amplify-chatbot-dev-ec945-deployment",
-      "UnauthRoleName": "amplify-chatbot-dev-ec945-unauthRole",
-      "StackName": "amplify-chatbot-dev-ec945",
-      "StackId": "arn:aws:cloudformation:eu-north-1:105417737483:stack/amplify-chatbot-dev-ec945/ea7d9e70-30cf-11f0-b258-0a6d4113ed43",
-      "AmplifyAppId": "d1jodm31trg851"
+      "AuthRoleName": "amplify-cloudassitant-dev-4f5d5-authRole",
+      "UnauthRoleArn": "arn:aws:iam::801971731739:role/amplify-cloudassitant-dev-4f5d5-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::801971731739:role/amplify-cloudassitant-dev-4f5d5-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-cloudassitant-dev-4f5d5-deployment",
+      "UnauthRoleName": "amplify-cloudassitant-dev-4f5d5-unauthRole",
+      "StackName": "amplify-cloudassitant-dev-4f5d5",
+      "StackId": "arn:aws:cloudformation:eu-west-1:801971731739:stack/amplify-cloudassitant-dev-4f5d5/b67f1ec0-33ca-11f0-b226-0abfa388a643",
+      "AmplifyAppId": "d23563c04xwzx3"
+    },
+    "categories": {
+      "auth": {
+        "cloudassitant8ea51a8e": {}
+      }
     }
   }
 }

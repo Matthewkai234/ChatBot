@@ -1,0 +1,10 @@
+{
+  "resourceName": "UserPreferencesStorage",
+  "tableName": "UserPreferencesTable",
+  "partitionKey": {
+    "fieldName": "userId",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

@@ -1,0 +1,17 @@
+type Conversation @model @auth(rules: [{ allow: owner }]) {
+  id: ID!
+  name: String!
+  description: String
+  user: String! @index(name: "byUser", queryField: "conversationsByUser")
+  utterances: [Utterance] @hasMany(indexName: "byConversation", fields: ["id"])
+  createdAt: AWSDateTime!
+}
+    
+type Utterance @model @auth(rules: [{ allow: owner }]) {
+  id: ID!
+  text: String!
+  isBot: Boolean!
+  conversationId: ID! @index(name: "byConversation", sortKeyFields: ["createdAt"])
+  createdAt: AWSDateTime!
+}
+

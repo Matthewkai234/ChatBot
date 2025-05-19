@@ -1,6 +1,6 @@
 
 # Serverless Conversational AI Assistant with AWS Amplify & Amazon Lex
-![Cloud Assistant Architecture](path/to/your-image.png)
+![Cloud Assistant Architecture](assets/architecture.png)
 
 ## Table of Contents
 1. [Project Overview](#project-overview)

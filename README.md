@@ -486,7 +486,9 @@ To cleanup all created resources, perform the following: 
 - Navigate to the Amazon Lex console, select the assistant bot, click the Actions dropdown, and select “Delete”
 
 ## Conclusion
-This documentation provides a comprehensive guide to setting up a serverless conversational AI assistant using AWS Amplify and Amazon Lex. For additional support, refer to:
+This documentation provides a comprehensive guide to setting up a serverless conversational AI assistant using AWS Amplify and Amazon Lex. 
+Deployment URL : https://main.d23563c04xwzx3.amplifyapp.com/chat
+For additional support, refer to:
 
 - [AWS Amplify Documentation](https://docs.amplify.aws/)
 - [Amazon Lex Developer Guide](https://docs.aws.amazon.com/lexv2/latest/dg/what-is.html)
